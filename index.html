@@ -102,7 +102,10 @@
     /* Day 1 hero card */
     .day1-card {
       position: relative;
-      background: var(--card-bg);
+      background-color: var(--card-bg);
+      background-image:
+        repeating-linear-gradient( 45deg, rgba(255,255,255,.055) 0, rgba(255,255,255,.055) 1px, transparent 1px, transparent 9px),
+        repeating-linear-gradient(-45deg, rgba(255,255,255,.055) 0, rgba(255,255,255,.055) 1px, transparent 1px, transparent 9px);
       border: 1px solid var(--mid);
       min-height: 260px;
       overflow: hidden;
@@ -110,7 +113,7 @@
     .day1-card::before {
       content: '';
       position: absolute; inset: 0;
-      background: linear-gradient(0deg, rgba(45,41,38,.8) 0%, rgba(45,41,38,.5) 45%, rgba(45,41,38,.8) 100%);
+      background: linear-gradient(0deg, rgba(45,41,38,.87) 0%, rgba(45,41,38,.5) 45%, rgba(45,41,38,.8) 100%);
     }
     .day1-card .card-inner {
       position: relative;
