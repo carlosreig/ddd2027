@@ -201,39 +201,7 @@
       line-height: .95;
       text-align: center;
     }
-    .email-form {
-      display: flex;
-      width: 520px;
-      max-width: 100%;
-    }
-    .email-input {
-      flex: 1;
-      background: transparent;
-      border: 1px solid var(--cream);
-      color: var(--mid);
-      font-family: 'Geist Mono', monospace;
-      font-size: 13px;
-      letter-spacing: 1px;
-      padding: 0 16px;
-      height: 52px;
-      outline: none;
-    }
-    .email-input::placeholder { color: var(--mid); }
-    .notify-btn {
-      background: var(--cream);
-      color: var(--dark);
-      border: none;
-      font-family: 'Geist Mono', monospace;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      height: 52px;
-      padding: 0 28px;
-      white-space: nowrap;
-      cursor: pointer;
-    }
-    .notify-btn:hover { background: #e8e4da; }
-    .footer-divider { background: rgba(94,89,84,.33); height: 1px; }
+.footer-divider { background: rgba(94,89,84,.33); height: 1px; }
     .footer-bottom { font-size: 11px; letter-spacing: 2px; }
   </style>
 </head>
@@ -265,6 +233,11 @@
     </div>
 
     <div class="hr-line mb-1"></div>
+
+    <!-- Month label -->
+    <div class="d-flex justify-content-end py-2 mb-1">
+      <span class="font-mono text-muted-custom" style="font-size:11px;letter-spacing:3px;">MAY 2027</span>
+    </div>
 
     <!-- Day 1 -->
     <div class="day1-card mb-1">
@@ -467,15 +440,11 @@
       <!-- headline -->
       <h2 class="font-anton text-cream footer-headline mb-0">MORE INFO<br>COMING SOON</h2>
 
-      <!-- subtext + form -->
+      <!-- subtext -->
       <div class="d-flex flex-column align-items-center gap-3 w-100" style="max-width:600px;">
         <p class="font-inter text-mid text-center mb-0" style="font-size:16px;line-height:1.6;">
           Call for papers, ticket prices, venue details, and accommodation info will be announced shortly.
         </p>
-        <form class="email-form" onsubmit="return false;">
-          <input class="email-input" type="email" placeholder="your@email.com" aria-label="Email address">
-          <button class="notify-btn font-mono">NOTIFY ME</button>
-        </form>
       </div>
 
       <div class="footer-divider w-100"></div>
